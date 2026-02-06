@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIBuilder.uss?fileID=7433441132597879392&amp;guid=db34f2e32b4556543941cf0d0e57e2a8&amp;type=3#UIBuilder"/>
+    <ui:ProgressBar value="0" title="" high-value="1"/>
+</ui:UXML>

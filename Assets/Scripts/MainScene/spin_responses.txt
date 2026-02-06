@@ -1,0 +1,173 @@
+{
+  "initResponse": {
+    "symbols": [7, 8, 9, 10, 11, 3, 4, 5, 6, 7, 8, 9, 10, 11, 7],
+    "paylines": [],
+    "totalWin": 0,
+    "isBigWin": false
+  },
+  "spins": [
+    {
+      "symbols": [7,3,8,4,9,10,8,6,11,3,7,9,10,4,11],
+      "paylines": [],
+      "totalWin": 0,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [7,9,8,7,10,3,3,3,3,3,8,10,11,9,11],
+      "paylines": [
+        { "paylineId": 1, "winAmount": 50, "positions": [5,6,7,8,9] }
+      ],
+      "totalWin": 50,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [8,8,8,8,8,7,10,3,9,4,9,11,7,10,11],
+      "paylines": [
+        { "paylineId": 2, "winAmount": 40, "positions": [0,1,2,3,4] }
+      ],
+      "totalWin": 40,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [9,11,3,10,8,4,7,6,5,11,10,8,9,7,4],
+      "paylines": [],
+      "totalWin": 0,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [7,10,3,7,10,9,11,8,9,11,4,4,4,4,4],
+      "paylines": [
+        { "paylineId": 3, "winAmount": 70, "positions": [10,11,12,13,14] }
+      ],
+      "totalWin": 70,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [5,10,8,7,5,7,5,6,5,4,9,11,5,9,11],
+      "paylines": [
+        { "paylineId": 4, "winAmount": 120, "positions": [0,6,12,8,4] }
+      ],
+      "totalWin": 120,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [2,10,6,7,10,7,6,8,6,4,6,11,3,6,6],
+      "paylines": [
+        { "paylineId": 5, "winAmount": 120, "positions": [10,6,2,8,14] }
+      ],
+      "totalWin": 120,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [10,4,9,11,8,3,7,5,6,3,11,8,10,7,4],
+      "paylines": [],
+      "totalWin": 0,
+      "isBigWin": false
+    },
+
+    {
+  "symbols": [8,7,10,7,11,3,9,6,4,10,7,5,7,9,7],
+  "paylines": [
+    { "paylineId": 6, "winAmount": 60, "positions": [10,1,12,3,14] }
+  ],
+  "totalWin": 60,
+  "isBigWin": false
+},
+
+    {
+  "symbols": [8,5,8,7,8,10,3,6,11,4,9,8,7,8,2],
+  "paylines": [
+    { "paylineId": 7, "winAmount": 60, "positions": [0,11,2,13,4] }
+  ],
+  "totalWin": 60,
+  "isBigWin": false
+},
+
+    {
+      "symbols": [3,10,8,7,3,7,3,6,3,4,9,11,3,9,11],
+      "paylines": [
+        { "paylineId": 8, "winAmount": 150, "positions": [0,6,12,8,4] }
+      ],
+      "totalWin": 150,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [7,10,4,7,10,9,4,8,4,11,4,11,3,9,4],
+      "paylines": [
+        { "paylineId": 9, "winAmount": 150, "positions": [10,6,2,8,14] }
+      ],
+      "totalWin": 150,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [1,8,1,8,1,7,10,3,6,4,9,11,7,9,11],
+      "paylines": [
+        { "paylineId": 10, "winAmount": 0, "positions": [0,2,4] }
+      ],
+      "totalWin": 0,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [7,8,10,9,11,2,2,2,2,2,9,11,7,10,8],
+      "paylines": [
+        { "paylineId": 11, "winAmount": 200, "positions": [5,6,7,8,9] }
+      ],
+      "totalWin": 200,
+      "isBigWin": true
+    },
+
+    {
+      "symbols": [9,9,9,9,9,7,8,3,4,11,10,10,10,10,10],
+      "paylines": [
+        { "paylineId": 15, "winAmount": 40, "positions": [0,1,2,3,4] },
+        { "paylineId": 16, "winAmount": 50, "positions": [10,11,12,13,14] }
+      ],
+      "totalWin": 90,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [3,3,3,3,3,7,8,3,9,4,9,11,7,10,11],
+      "paylines": [
+        { "paylineId": 12, "winAmount": 90, "positions": [0,1,2,3,4] }
+      ],
+      "totalWin": 90,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [7,8,3,4,10,9,10,7,9,8,11,11,11,11,11],
+      "paylines": [
+        { "paylineId": 13, "winAmount": 30, "positions": [10,11,12,13,14] }
+      ],
+      "totalWin": 30,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [7,8,10,9,11,2,2,2,2,2,9,11,7,10,8],
+      "paylines": [
+        { "paylineId": 14, "winAmount": 180, "positions": [5,6,7,8,9] }
+      ],
+      "totalWin": 180,
+      "isBigWin": false
+    },
+
+    {
+      "symbols": [8,6,9,7,8,5,10,4,3,6,11,3,10,8,4],
+      "paylines": [],
+      "totalWin": 0,
+      "isBigWin": false
+    }
+  ]
+}
