@@ -24,10 +24,13 @@ public class ReelManager : MonoBehaviour
     public List<SymbolHolderHandler> symbolHolderList = new List<SymbolHolderHandler>();
 
     public float startDelay = 0.25f;
+    public float loopDelay = 0.5f;
     public float stopDelay = 0.25f;
     public float startDelayBetweenReels = 0.25f;
     public float stopDelayBetweenReels = 0.25f;
     //public float autoStopDelay = 1f;
+
+    
 
     protected bool spinResultReceived = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -107,16 +110,20 @@ public class ReelManager : MonoBehaviour
 
     IEnumerator StartingSpin()
     {
-        yield return new WaitForSeconds(startDelay);
 
+        yield return new WaitForSeconds(startDelay);
         foreach (var reel in reels)
         {
             reel.StartSpin();
             yield return new WaitForSeconds(startDelayBetweenReels);
         }
 
+        yield return new WaitForSeconds(loopDelay);
+
         state = ReelState.Spinning;
     }
+
+
 
     protected void ResultReceived()
     {

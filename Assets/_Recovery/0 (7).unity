@@ -7267,7 +7267,6 @@ MonoBehaviour:
   - {fileID: 1171914435}
   symbolHolderList: []
   startDelay: 0.25
-  loopDelay: 3
   stopDelay: 0
   startDelayBetweenReels: 0.15
   stopDelayBetweenReels: 0.15
@@ -7460,7 +7459,6 @@ MonoBehaviour:
   spinDistance: 635.2
   spinLoopDuration: 0.3
   stopDuration: 0.25
-  stopReel: 1
 --- !u!114 &373229918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10498,7 +10496,6 @@ MonoBehaviour:
   spinDistance: 635.2
   spinLoopDuration: 0.3
   stopDuration: 0.25
-  stopReel: 1
 --- !u!114 &534142136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22034,7 +22031,6 @@ MonoBehaviour:
   spinDistance: 635.2
   spinLoopDuration: 0.3
   stopDuration: 0.25
-  stopReel: 1
 --- !u!114 &1171914436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25228,7 +25224,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1356885587}
   - component: {fileID: 1356885586}
-  - component: {fileID: 1356885588}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -25272,103 +25267,6 @@ Transform:
   - {fileID: 1673502667}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1356885588
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356885585}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.325
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 92
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1365075807
 GameObject:
   m_ObjectHideFlags: 0
@@ -31192,7 +31090,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7ae25a26379b8c249bdb7c7f3ef2d960, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.166
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -32695,7 +32593,6 @@ MonoBehaviour:
   spinDistance: 635.2
   spinLoopDuration: 0.3
   stopDuration: 0.25
-  stopReel: 1
 --- !u!114 &1736375169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36484,7 +36381,6 @@ MonoBehaviour:
   spinDistance: 635.2
   spinLoopDuration: 0.3
   stopDuration: 0.25
-  stopReel: 1
 --- !u!114 &1943087778
 MonoBehaviour:
   m_ObjectHideFlags: 0

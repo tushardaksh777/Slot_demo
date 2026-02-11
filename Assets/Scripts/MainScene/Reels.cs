@@ -18,7 +18,7 @@ public class Reels : MonoBehaviour
 
     private Tween spinTween;
     private bool isSpinning;
-
+    public bool stopReel = false;
     public void ReelInit()
     {
         reelRoot.anchoredPosition = Vector2.zero;
@@ -39,19 +39,40 @@ public class Reels : MonoBehaviour
         {
             symbolsHolders[i].ClearSymbol();
         }*/
-
-        StartLoopSpin();
-    }
-
-    private void StartLoopSpin()
-    {
         isSpinning = true;
         reelRoot.anchoredPosition = Vector2.zero;
 
         spinTween?.Kill();
         reelRoot
         .DOAnchorPosY(-spinDistance, stopDuration)
-        .SetEase(Ease.Linear);
+        .SetEase(Ease.Linear).OnComplete(StartLoopSpin);
+        //StartLoopSpin();
+    }
+
+    private void StartLoopSpin()
+    {
+        if (isSpinning)
+        {
+            reelRoot.anchoredPosition = new Vector2(0, spinDistance);
+            reelRoot
+            .DOAnchorPosY(-spinDistance, 0.25f)
+            .SetEase(Ease.Linear).OnComplete(() =>
+            {
+                reelRoot.anchoredPosition = new Vector2(0, spinDistance);
+
+                reelRoot
+                .DOAnchorPosY(-spinDistance, 0.25f)
+                .SetEase(Ease.Linear).OnComplete(() =>
+                {
+                    reelRoot.anchoredPosition = new Vector2(0, spinDistance);
+
+                    reelRoot
+                    .DOAnchorPosY(-spinDistance, 0.25f)
+                    .SetEase(Ease.Linear);
+            });
+            });
+        }
+        
     }
 
     public void StopSpinAndSetResult(List<int> resultSymbols , bool isSpinEnded)
@@ -66,15 +87,19 @@ public class Reels : MonoBehaviour
         float stopDurationCalculated = spinDistance / speed;
 
         float slowStopDuration = spinLoopDuration * 1.8f;
+        
+        reelRoot.anchoredPosition = new Vector2(0, spinDistance);
+
+        SetScreenSymbols(resultSymbols);
 
         reelRoot
-            .DOAnchorPosY(-spinDistance, slowStopDuration)
-            .SetEase(Ease.OutCubic)
+            .DOAnchorPosY(0, 0.25f)
+            .SetEase(Ease.Linear)
             .OnComplete(() =>
             {
-                reelRoot.anchoredPosition = Vector2.zero;
-                reelRoot.DOPunchAnchorPos(new Vector2(0, -8f), 0.06f);
-                SetScreenSymbols(resultSymbols);
+                //reelRoot.anchoredPosition = Vector2.zero;
+                //reelRoot.DOPunchAnchorPos(new Vector2(0, -8f), 0.06f);
+                
                 AudioManager.Instance?.PlaySpinStop();
                 if (isSpinEnded)
                 {
